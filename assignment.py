@@ -19,7 +19,7 @@ st.sidebar.date_input('DATE')
 
         
 
-df = pd.read_csv('/Users/lng1351/mypython/output.csv')
+df = pd.read_csv('output.csv.zip')
 df_State = df.groupby(["State"], as_index=False)["Rate"].mean()
 df_State.head()
 st.header('Bar chart')
